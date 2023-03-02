@@ -24,16 +24,12 @@ const Works = () => {
             Works for All these
           </span>
           <span>Brands & Clients</span>
-          <spane>
-            Lorem ispum is simpley dummy text of printing of printing Lorem
-            <br />
-            ispum is simpley dummy text of printingLorem ispum is simpley dummy
-            text
-            <br />
-            y dummy text of printingLorem
-            <br />
-            ispum is simpley dummy text of printing
-          </spane>
+          <span style={{fontSize:'0.9rem'}}>
+          I have had the privilege of working with some of the biggest names<br/>
+           in the tech industry, including Google, Amazon, and Microsoft.<br/>
+            During my time at these companies, I gained valuable experience<br/>
+             in web development, working on various projects ranging from<br/>
+              e-commerce websites to complex web applications. </span>
           <Link to="contact" smooth={true} spy={true}>
             <button className="button s-button">Hire Me</button>
           </Link>

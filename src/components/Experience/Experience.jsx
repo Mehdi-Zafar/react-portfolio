@@ -6,11 +6,13 @@ const Experience = () => {
   const darkMode = theme.state.darkMode;
 
   return (
+    <>
+    <h1>Here's my <span>Experience</span></h1>
     <div className="experience" id='experience'>
       <div className="achievement">
         {/* darkMode */}
         <div className="circle" style={{color: darkMode?'var(--orange)':''}}>8+</div>
-        <span  style={{color: darkMode?'white':''}}>years </span>
+        <span  style={{color: darkMode?'white':''}}>years of</span>
         <span>Experience</span>
       </div>
       <div className="achievement">
@@ -24,6 +26,7 @@ const Experience = () => {
         <span>Work</span>
       </div>
     </div>
+    </>
   );
 };
 

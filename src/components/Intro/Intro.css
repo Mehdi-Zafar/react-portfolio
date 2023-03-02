@@ -42,6 +42,12 @@
   display: flex;
   gap: 0rem;
 }
+
+.i-icons a{
+  width: fit-content;
+  margin: 0;
+}
+
 .i-icons > * {
   transform: scale(0.5);
 }
@@ -61,15 +67,22 @@
   transform: scale(0.69);
   left: -15%;
   top: -9%;
+  /* webkit-animation: up-and-down 5s linear infinite;
+    animation: up-and-down 5s linear infinite; */
 }
 .i-right > :nth-child(2) {
   top: -4.6rem;
   transform: scale(0.67);
   left: -3rem;
+  /* webkit-animation: up-and-down 5s linear infinite;
+    animation: up-and-down 5s linear infinite; */
 }
 .i-right > :nth-child(3) {
-  transform: scale(1.4);
+  transform: scale(0.8);
   left: 28%;
+  top: -200px;
+  /* webkit-animation: up-and-down 5s linear infinite;
+  animation: up-and-down 5s linear infinite; */
 }
 .i-right > :nth-child(4) {
   transform: scale(0.62);

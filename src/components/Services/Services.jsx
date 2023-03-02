@@ -7,6 +7,12 @@ import Humble from "../../img/humble.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import Resume from './resume.pdf';
+import {AiFillHtml5} from 'react-icons/ai'
+import {SiCss3,SiJavascript} from 'react-icons/si'
+import {FaReact,FaNode} from 'react-icons/fa'
+import Experience from "../Experience/Experience";
+
+
 
 const Services = () => {
   // context
@@ -24,64 +30,32 @@ const Services = () => {
       {/* left side */}
       <div className="awesome">
         {/* dark mode */}
-        <span style={{ color: darkMode ? "white" : "" }}>My Awesome</span>
-        <span>services</span>
-        <spane>
-          Lorem ispum is simpley dummy text of printing of printing Lorem
-          <br />
-          ispum is simpley dummy text of printing
-        </spane>
+        <span style={{ color: darkMode ? "white" : "" }}>My Professional <span className="color-text">Services</span></span>
+        <div className="description">
+          <p>As a web developer, I am experienced in designing and developing visually appealing
+             and user-friendly websites. My expertise includes proficiency in HTML, CSS, JavaScript,
+              and various web development frameworks. I have a keen eye for detail and am skilled
+               in implementing responsive design to ensure seamless website functionality across
+                multiple platforms and devices. I am also adept at working with APIs and 
+                integrating third-party tools to enhance website functionality. Additionally,
+                 I am experienced in developing and maintaining website content, optimizing
+                  website speed and performance, and conducting thorough testing to ensure
+                   website security and user privacy. My strong problem-solving skills,
+                    effective communication, and ability to work collaboratively with team 
+                    members and clients make me a valuable asset to any web development project.</p>
+        </div>
+        <div className="tech-logos">
+          <div><AiFillHtml5/></div>
+          <div><SiCss3/></div>
+          <div><SiJavascript/></div>
+          <div><FaReact/></div>
+          <div><FaNode/></div>
+        </div>
         <a href={Resume} download>
           <button className="button s-button">Download&nbsp;CV</button>
         </a>
         <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
-      </div>
-      {/* right */}
-      <div className="cards">
-        {/* first card */}
-        <motion.div
-          initial={{ left: "25rem" }}
-          whileInView={{ left: "14rem" }}
-          transition={transition}
-        >
-          <Card
-            emoji={HeartEmoji}
-            heading={"Design"}
-            detail={"Figma, Sketch, Photoshop, Adobe Illustrator, Adobe xd"}
-          />
-        </motion.div>
-        {/* second card */}
-        <motion.div
-          initial={{ left: "-11rem", top: "12rem" }}
-          whileInView={{ left: "-4rem" }}
-          transition={transition}
-        >
-          <Card
-            emoji={Glasses}
-            heading={"Developer"}
-            detail={"Html, Css, JavaScript, React, Nodejs, Express"}
-          />
-        </motion.div>
-        {/* 3rd */}
-        <motion.div
-          initial={{ top: "19rem", left: "25rem" }}
-          whileInView={{ left: "12rem" }}
-          transition={transition}
-        >
-          <Card
-            emoji={Humble}
-            heading={"UI/UX"}
-            detail={
-              "Development of beautiful and easy to use components"
-            }
-            color="rgba(252, 166, 31, 0.45)"
-          />
-        </motion.div>
-        <div
-          className="blur s-blur2"
-          style={{ background: "var(--purple)" }}
-        ></div>
-      </div>
+      </div>      
     </div>
   );
 };

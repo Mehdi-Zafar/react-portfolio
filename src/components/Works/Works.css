@@ -27,12 +27,16 @@
 .awesome > :nth-child(3) {
   color: var(--gray);
   font-size: 14px;
-  margin-top: 1rem;
+  margin-top: 0.2rem;
 }
-.s-button {
+/* .s-button {
   width: 8rem;
   height: 2rem;
   margin-top: 4rem;
+} */
+
+.desc{
+  width: 50%;
 }
 
 /* right side */

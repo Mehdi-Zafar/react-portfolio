@@ -31,7 +31,8 @@ const Intro = () => {
           <span>Mehdi Zafar</span>
           <span>
             Frontend Developer with high level of experience in web designing
-            and development.
+            and development. Always eager to explore new challenges and come up
+            with solutions.
           </span>
         </div>
         <Link to="contact" smooth={true} spy={true}>
@@ -39,9 +40,9 @@ const Intro = () => {
         </Link>
         {/* social icons */}
         <div className="i-icons">
-          <img src={Github} alt="" />
-          <img src={LinkedIn} alt="" />
-          <img src={Instagram} alt="" />
+          <a target="_blank" href="https://github.com/Mehdi-Zafar"><img src={Github} alt="" /></a>
+          <a target="_blank" href="https://www.linkedin.com/in/mehdi-zafar-9a910522a/"><img src={LinkedIn} alt="" /></a>
+          <a target="_blank" href="https://www.instagram.com/mehdizaffar/"><img src={Instagram} alt="" /></a>
         </div>
       </div>
       {/* right image side */}
@@ -57,26 +58,7 @@ const Intro = () => {
           src={glassesimoji}
           alt=""
         />
-
-        <motion.div
-          initial={{ top: "-4%", left: "74%" }}
-          whileInView={{ left: "68%" }}
-          transition={transition}
-          className="floating-div"
-        >
-          <FloatinDiv img={crown} text1="Web" text2="Developer" />
-        </motion.div>
-
-        {/* animation */}
-        <motion.div
-          initial={{ left: "9rem", top: "18rem" }}
-          whileInView={{ left: "0rem" }}
-          transition={transition}
-          className="floating-div"
-        >
-          {/* floatinDiv mein change hy dark mode ka */}
-          <FloatinDiv img={thumbup} text1="Best Design" text2="Award" />
-        </motion.div>
+        
 
         <div className="blur" style={{ background: "rgb(238 210 255)" }}></div>
         <div
