@@ -27,7 +27,7 @@ const navbar = () => {
             </li>
             <li>
               <Link to="services" spy={true} smooth={true}>
-                <FaRegHandshake/>&nbsp;Serivces
+                <FaRegHandshake/>&nbsp;Services
               </Link>
             </li>
             <li>
